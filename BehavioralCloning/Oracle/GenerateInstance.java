@@ -25,7 +25,7 @@ public class GenerateInstance {
 		AI adv = new CoacAI(utt);
 		AI oraculo = new CoacAI(utt);
 		Oracle EAs = new Oracle(gs2,1,15000,oraculo,adv,true,true);
-		EAs.salvar("CoacvsCoac128", true);
+		EAs.save("CoacvsCoac128", true);
 	}
 	
 	public static List<AI> decodeScripts(UnitTypeTable utt, String sScripts) {

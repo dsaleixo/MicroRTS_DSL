@@ -21,7 +21,7 @@ public class C_E1 extends C implements Node_E1, NoTerminal_E1 {
 	}
 
 	@Override
-	public Node_E1 sorteiaFilho(int budget) {
+	public Node_E1 drawchild(int budget) {
 		// TODO Auto-generated method stub
 		
 		Random gerador = new Random();
@@ -43,7 +43,7 @@ public class C_E1 extends C implements Node_E1, NoTerminal_E1 {
 	@Override
 	public void sample(int budget) {
 		// TODO Auto-generated method stub
-		Node_E1 child = this.sorteiaFilho(budget);
+		Node_E1 child = this.drawchild(budget);
 		child.sample(budget );
 		this.setChildC((ChildC)child);
 	}

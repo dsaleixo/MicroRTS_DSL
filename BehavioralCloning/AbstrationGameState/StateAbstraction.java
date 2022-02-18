@@ -9,7 +9,7 @@ import rts.UnitAction;
 import rts.units.Unit;
 import util.Pair;
 
-public class MarcaDagua implements AbstrationGameStates {
+public class StateAbstraction implements AbstrationGameStates {
 
 	int worker;
 	int light;
@@ -19,9 +19,9 @@ public class MarcaDagua implements AbstrationGameStates {
 	int barrack;
 	int saved_resource;
 	
-	MarcaDagua oracle;
+	StateAbstraction oracle;
 	
-	public MarcaDagua() {
+	public StateAbstraction() {
 		this.worker=0;
 		this.light=0;
 		this.ranged=0;
@@ -32,7 +32,7 @@ public class MarcaDagua implements AbstrationGameStates {
 	}
 	
 	
-	public MarcaDagua(Oracle O,int play) {
+	public StateAbstraction(Oracle O,int play) {
 		// TODO Auto-generated constructor stub
 		this.worker=0;
 		this.light=0;
@@ -46,7 +46,7 @@ public class MarcaDagua implements AbstrationGameStates {
 		
 			pas = O.pa0s;
 		
-		this.oracle = new MarcaDagua();
+		this.oracle = new StateAbstraction();
 		for(PlayerAction pa : pas) {
 			this.oracle.evaluate(pa, play);
 		}

@@ -23,7 +23,7 @@ public class S_E1 extends S implements Node_E1, NoTerminal_E1 {
 	}
 
 	@Override
-	public Node_E1 sorteiaFilho(int budget) {
+	public Node_E1 drawchild(int budget) {
 		// TODO Auto-generated method stub
 		int op=0;
 		if(budget>=1)op=1;
@@ -51,7 +51,7 @@ public class S_E1 extends S implements Node_E1, NoTerminal_E1 {
 	@Override
 	public void sample(int budget) {
 		// TODO Auto-generated method stub
-		Node_E1 child = this.sorteiaFilho(budget);
+		Node_E1 child = this.drawchild(budget);
 		child.sample(budget );
 		this.setChild((ChildS) child);
 		

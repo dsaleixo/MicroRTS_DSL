@@ -4,7 +4,7 @@ import java.util.List;
 
 import AIs.SA;
 import AIs.Search;
-import AbstrationGameState.MarcaDagua;
+import AbstrationGameState.StateAbstraction;
 import DSL.Node;
 import EvaluationFunction.Baseline;
 import EvaluationFunction.EvaluationFunction;
@@ -180,7 +180,7 @@ public class Main {
 			Oracle EAs = null;
 			EAs= new Oracle(partida,true);
 			
-			MarcaDagua eval = new MarcaDagua(EAs,0);
+			StateAbstraction eval = new StateAbstraction(EAs,0);
 			eval.imprimir();
 			playout = new EvaluationImitationState(eval);
 			

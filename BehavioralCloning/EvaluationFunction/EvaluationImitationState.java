@@ -2,7 +2,7 @@ package EvaluationFunction;
 
 import javax.swing.JFrame;
 
-import AbstrationGameState.MarcaDagua;
+import AbstrationGameState.StateAbstraction;
 import ai.core.AI;
 import gui.PhysicalGameStatePanel;
 import rts.GameState;
@@ -12,11 +12,11 @@ import util.Pair;
 
 public class EvaluationImitationState implements EvaluationFunction {
 
-	public MarcaDagua eval;
+	public StateAbstraction eval;
 
 	
 	
-	public EvaluationImitationState(MarcaDagua eval) {
+	public EvaluationImitationState(StateAbstraction eval) {
 		// TODO Auto-generated constructor stub
 		this.eval = eval;
 	

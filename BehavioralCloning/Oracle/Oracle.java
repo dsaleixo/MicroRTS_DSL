@@ -101,7 +101,7 @@ public class Oracle {
 	generates a match that will later be used as an oracle, the match will be saved 
 	in the Replay folder 
 	*/
-	public  void salvar(String nome,boolean salvarAcao) throws IOException {
+	public  void save(String nome,boolean salvarAcao) throws IOException {
 		
 		 File file = new File("./Replay/"+nome);
 		 file.mkdir();

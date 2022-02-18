@@ -5,5 +5,5 @@ import DSL.NoTerminal;
 
 
 public interface NoTerminal_E1 extends NoTerminal {
-	Node_E1 sorteiaFilho(int budget);
+	Node_E1 drawchild(int budget);
 }
